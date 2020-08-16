@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currency rate</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <section>
+            <form class="currency_rate_form">
+                <h3>Select currency:</h3>
+                <div class="all_currency">
+                    <div class="all_currency_div">
+                        <input type="checkbox" id="usd" class="currency" value="USD">
+                        <label for="usd">USD</label>
+                    </div>
+                    <div class="all_currency_div">
+                        <input type="checkbox" id="eur" class="currency" value="EUR">
+                        <label for="eur">EUR</label>
+                    </div>
+                    <div class="all_currency_div">
+                        <input type="checkbox" id="pln" class="currency" value="PLN">
+                        <label for="pln">PLN</label>
+                    </div>
+                    <div class="all_currency_div">
+                        <input type="checkbox" id="jpy" class="currency" value="JPY">
+                        <label for="jpy">JPY</label>
+                    </div>
+                    <div class="all_currency_div">
+                        <input type="checkbox" id="rub" class="currency" value="RUB">
+                        <label for="rub">RUB</label>
+                    </div>
+                    <div class="all_currency_div">
+                        <input type="checkbox" id="kzt" class="currency" value="KZT">
+                        <label for="kzt">KZT</label>
+                    </div>    
+                </div>
+                
+                <div class="date_block">
+                    <h3>Enter start date:</h3>
+                    <input id="dateFrom" type="date">
+                </div>
+                <div class="date_block">
+                    <h3>Enter end date:</h3>
+                    <input id="dateTo" type="date">
+                </div>
+                
+                <input class="btn" type="submit" value="OK">
+            </form>
+        </section>
+        <section id="answer_section">
+        </section>
+    
+        <script src="js/currencyClass.js"></script>
+        <script src="js/currencyRate.js"></script>
+        <script src="js/formHandler.js"></script>
+    </body>
+</html>
