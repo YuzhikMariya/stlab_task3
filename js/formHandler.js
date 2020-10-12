@@ -7,13 +7,13 @@ form.onsubmit = () => {
 
     let from = document.querySelector('#dateFrom').value;
     let to = document.querySelector('#dateTo').value;
+    let section = document.getElementById('answer_section');
 
     let dateFrom = new Date(from);
     let dateTo = new Date(to);
     if(dateFrom > dateTo){
-        let tempStr = from;
-        from = to;
-        to = tempStr;
+        section.innerHTML = 'Start date must be less than end date';
+        return false;
     }
     let currencyNames = getCheckedCheckBoxes('currency');
 
@@ -56,7 +56,6 @@ form.onsubmit = () => {
                 }
                 processedYear++;
                 if(processedYear == yearsCount*currencyNames.length){
-                    let section = document.getElementById('answer_section');
                     section.innerHTML = '';
                     section.appendChild(addTable(resultArray.sort(function(a, b){return Date.parse(a._date) - Date.parse(b._date)}), currencyNames));
                 }
