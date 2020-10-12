@@ -1,12 +1,13 @@
 class CurrencyRate{
     static getCurID(currency){
+        const USD = "USD", EUR = "EUR", PLN = "PLN", JPY = "JPY", RUB = "RUB", KZT = "KZT";
         switch(currency.toUpperCase()){
-            case "USD": return 145;
-            case "EUR": return 292;
-            case "PLN": return 293;
-            case "JPY": return 295;
-            case "RUB": return 298;
-            case "KZT": return 301;
+            case USD: return 145;
+            case EUR: return 292;
+            case PLN: return 293;
+            case JPY: return 295;
+            case RUB: return 298;
+            case KZT: return 301;
             
         }
     }

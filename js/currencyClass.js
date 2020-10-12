@@ -6,7 +6,7 @@ class Currency{
         this._date = date;
         this._currObj = {...currObj};
     }
-
+    
     addCurrency(curr, rate){
         this._currObj[curr] = rate;
     }

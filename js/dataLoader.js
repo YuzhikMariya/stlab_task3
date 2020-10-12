@@ -8,7 +8,6 @@ class DataLoader{
                 let url = `https://www.nbrb.by/API/ExRates/Rates/Dynamics/${CurrencyRate.getCurID(currency)}?startDate=${dateFrom}&endDate=${dateTo}`;
                 let response = await fetch(url);
                 return await response.json();
-
             }catch(err){
                 alert('Data not loaded. Please try again');
                 repeat = true;

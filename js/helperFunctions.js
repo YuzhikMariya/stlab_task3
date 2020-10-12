@@ -13,7 +13,6 @@ function getDate(str){
     let day = date.getDate();
     let month = date.getMonth()+1;
     let year = date.getFullYear();
-
     let resultStr = year + "-";
     if(month < 10){
         resultStr += '0';
@@ -23,7 +22,5 @@ function getDate(str){
         resultStr += '0';
     }
     resultStr += day;
-
-
     return  resultStr;
 }

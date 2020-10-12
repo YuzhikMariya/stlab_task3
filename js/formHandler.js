@@ -1,8 +1,6 @@
 let form = document.querySelector('.currency_rate_form');
 
 form.onsubmit = () => {
-
-
     let from = document.querySelector('#dateFrom').value;
     let to = document.querySelector('#dateTo').value;
     let section = document.getElementById('answer_section');
