@@ -5,7 +5,7 @@ class DataLoader{
         while(repeat && (attempt < 3)){
             try{
                 repeat = false;
-                let url = "https://www.nbrb.by/API/ExRates/Rates/Dynamics/" + CurrencyRate.getCurID(currency) + "?startDate=" + dateFrom + "&endDate=" + dateTo;
+                let url = `https://www.nbrb.by/API/ExRates/Rates/Dynamics/${CurrencyRate.getCurID(currency)}?startDate=${dateFrom}&endDate=${dateTo}`;
                 let response = await fetch(url);
                 return await response.json();
 
