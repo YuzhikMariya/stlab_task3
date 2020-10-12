@@ -1,0 +1,31 @@
+section{
+    width: 60%;
+    margin: auto;
+    background-color: rgb(255, 200, 200);
+    padding: 1em 3em;
+}
+
+.all_currency{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.all_currency_div{
+    width: 33%;
+}
+
+.btn{
+    display: block;
+    padding: 1em;
+    margin-top: 3em;
+    background-color: white;
+}
+
+.date_block{
+    display: inline-block;
+    width: 40%;
+}
+
+td{
+    padding: 0.5em 1em;
+}
