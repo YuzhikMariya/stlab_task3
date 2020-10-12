@@ -2,16 +2,9 @@ class Currency{
     _date = "";
     _currObj = {};
 
-    constructor(date){
+    constructor(date, currObj){
         this._date = date;
-        this._currObj = {
-            "USD": 0,
-            "EUR": 0,
-            "PLN": 0,
-            "JPY": 0,
-            "RUB": 0,
-            "KZT": 0
-        };
+        this._currObj = {...currObj};
     }
 
     addCurrency(curr, rate){
