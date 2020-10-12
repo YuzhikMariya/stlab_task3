@@ -1,5 +1,5 @@
 class QueryBuilder{
-    static build(from, to, currencyNames, sectionObj){
+    static build(from, to, currencyNames, section){
         const MS_COUNT_IN_YEAR = 365*24*60*60*1000,
               MS_COUNT_IN_DAY = 24*60*60*1000;
         const CURR_OBJECT = {
@@ -35,8 +35,8 @@ class QueryBuilder{
                     processedYear++;
                     if(processedYear == yearsCount*currencyNames.length){
                         resultArray.sort(function(a, b){return Date.parse(a._date) - Date.parse(b._date)});
-                        sectionObj.section.innerHTML = '';
-                        sectionObj.section.appendChild(TableCreator.addTable(resultArray, currencyNames)); 
+                        section.innerHTML = '';
+                        section.appendChild(TableCreator.addTable(resultArray, currencyNames)); 
                     }
     
                 })

@@ -12,7 +12,7 @@ form.onsubmit = () => {
         return false;
     }
     let currencyNames = getCheckedCheckBoxes('currency');
-    QueryBuilder.build(from, to, currencyNames, {section: section});
+    QueryBuilder.build(from, to, currencyNames, section);
     return false;
 }
 
